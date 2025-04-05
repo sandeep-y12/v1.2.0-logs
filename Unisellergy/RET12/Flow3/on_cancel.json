@@ -1,0 +1,379 @@
+{
+    "context": {
+      "domain": "ONDC:RET12",
+      "city": "std:02525",
+      "bap_id": "pramaan.ondc.org/beta/preprod/mock/buyer",
+      "bap_uri": "https://pramaan.ondc.org/beta/preprod/mock/buyer",
+      "bpp_id": "stageondc.unisellergy.in",
+      "bpp_uri": "https://stageondc.unisellergy.in/api/v1/pre-prod/",
+      "transaction_id": "cedc9d37-59ce-4132-9fc6-76794001ac33",
+      "message_id": "e0454180-c20b-47e3-afc6-977ab594b7b0",
+      "timestamp": "2025-04-05T07:22:49.551Z",
+      "action": "on_cancel",
+      "core_version": "1.2.0",
+      "country": "IND",
+      "ttl": "PT30S"
+    },
+    "message": {
+      "order": {
+        "id": "SS1743837738406",
+        "state": "Cancelled",
+        "provider": {
+          "id": "12",
+          "locations": [
+            {
+              "id": "1"
+            }
+          ]
+        },
+        "items": [
+          {
+            "id": "19907",
+            "fulfillment_id": "1",
+            "quantity": {
+              "count": 1
+            }
+          }
+        ],
+        "billing": {
+          "address": {
+            "name": "Nirdosh Chauhan",
+            "building": "221 B",
+            "locality": "Baker Steeet",
+            "city": "Gurgaon",
+            "state": "Haryana",
+            "country": "India",
+            "area_code": "122007"
+          },
+          "tax_number": "00ABCDE1234F1Z5",
+          "name": "Nirdosh Chauhan",
+          "email": "nirdosh.chauhan@sequelstring.com",
+          "phone": "9876543210",
+          "created_at": "2025-04-05T07:22:10.156Z",
+          "updated_at": "2025-04-05T07:22:10.156Z"
+        },
+        "cancellation": {
+          "cancelled_by": "pramaan.ondc.org/beta/preprod/mock/buyer",
+          "reason": {
+            "id": "001"
+          }
+        },
+        "fulfillments": [
+          {
+            "id": "1",
+            "@ondc/org/provider_name": "Ship_Rocket_Courier_Partner",
+            "state": {
+              "descriptor": {
+                "code": "Cancelled"
+              }
+            },
+            "type": "Delivery",
+            "tracking": true,
+            "@ondc/org/TAT": "PT24H",
+            "start": {
+              "location": {
+                "id": "1",
+                "descriptor": {
+                  "name": "Ship_Rocket_Courier_Partner"
+                },
+                "gps": "18.9487057,72.8288061",
+                "address": {
+                  "locality": "Test Location",
+                  "city": "Mumbai",
+                  "area_code": "02525",
+                  "state": "Maharashtra"
+                }
+              },
+              "time": {
+                "range": {
+                  "start": "2023-06-03T10:00:00.000Z",
+                  "end": "2023-06-03T10:00:00.000Z"
+                }
+              },
+              "contact": {
+                "phone": "9503644277",
+                "email": "sandeep.y@enbrandz.us"
+              }
+            },
+            "end": {
+              "location": {
+                "gps": "28.4554726,77.0219019",
+                "address": {
+                  "name": "Nirdosh Chauhan",
+                  "building": "221 B",
+                  "locality": "Baker Steeet",
+                  "city": "Gurgaon",
+                  "state": "Haryana",
+                  "country": "India",
+                  "area_code": "122007"
+                }
+              },
+              "person": {
+                "name": "Nirdosh Chauhan"
+              },
+              "contact": {
+                "phone": "9876543210",
+                "email": "nirdosh.chauhan@sequelstring.com"
+              }
+            },
+            "tags": [
+              {
+                "code": "cancel_request",
+                "list": [
+                  {
+                    "code": "reason_id",
+                    "value": "001"
+                  },
+                  {
+                    "code": "initiated_by",
+                    "value": "pramaan.ondc.org/beta/preprod/mock/buyer"
+                  }
+                ]
+              },
+              {
+                "code": "igm_request",
+                "list": [
+                  {
+                    "code": "id",
+                    "value": "1"
+                  }
+                ]
+              },
+              {
+                "code": "precancel_state",
+                "list": [
+                  {
+                    "code": "fulfillment_state",
+                    "value": "Created"
+                  },
+                  {
+                    "code": "updated_at",
+                    "value": "2025-04-05T07:22:49.574Z"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "c1",
+            "type": "Cancel",
+            "state": {
+              "descriptor": {
+                "code": "Cancelled"
+              }
+            },
+            "tags": [
+              {
+                "code": "quote_trail",
+                "list": [
+                  {
+                    "code": "type",
+                    "value": "item"
+                  },
+                  {
+                    "code": "id",
+                    "value": "19907"
+                  },
+                  {
+                    "code": "currency",
+                    "value": "INR"
+                  },
+                  {
+                    "code": "value",
+                    "value": "100"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "quote": {
+          "price": {
+            "currency": "INR",
+            "value": "100"
+          },
+          "breakup": [
+            {
+              "@ondc/org/item_id": "19907",
+              "@ondc/org/item_quantity": {
+                "count": 0
+              },
+              "title": "Shirt Black",
+              "@ondc/org/title_type": "item",
+              "price": {
+                "currency": "INR",
+                "value": "0"
+              },
+              "item": {
+                "quantity": {
+                  "available": {
+                    "count": "0"
+                  },
+                  "maximum": {
+                    "count": "0"
+                  }
+                },
+                "price": {
+                  "currency": "INR",
+                  "value": "100"
+                }
+              }
+            },
+            {
+              "@ondc/org/item_id": "1",
+              "title": "Delivery charges",
+              "@ondc/org/title_type": "delivery",
+              "price": {
+                "currency": "INR",
+                "value": "100"
+              }
+            }
+          ],
+          "ttl": "P1D"
+        },
+        "payment": {
+          "type": "ON-ORDER",
+          "collected_by": "BAP",
+          "uri": "https://snp.com/pg",
+          "status": "PAID",
+          "@ondc/org/buyer_app_finder_fee_type": "percent",
+          "@ondc/org/settlement_basis": "delivery",
+          "@ondc/org/settlement_window": "P1D",
+          "@ondc/org/withholding_amount": "10.00",
+          "@ondc/org/settlement_details": [
+            {
+              "settlement_counterparty": "UniSellergy",
+              "settlement_phase": "sale-amount",
+              "settlement_type": "upi",
+              "settlement_bank_account_no": "1234567890",
+              "settlement_ifsc_code": "ICIC0001234",
+              "bank_name": "ICICI Bank",
+              "branch_name": "Mumbai",
+              "beneficiary_name": "Kartik",
+              "upi_address": "kartik@upi"
+            }
+          ],
+          "cancellation_terms": [
+            {
+              "fulfillment_state": {
+                "descriptor": {
+                  "code": "Pending",
+                  "short_desc": "002"
+                }
+              },
+              "cancellation_fee": {
+                "percentage": "0.00",
+                "amount": {
+                  "currency": "INR",
+                  "value": "0.00"
+                }
+              }
+            },
+            {
+              "fulfillment_state": {
+                "descriptor": {
+                  "code": "Packed",
+                  "short_desc": "001,003"
+                }
+              },
+              "cancellation_fee": {
+                "percentage": "10.00",
+                "amount": {
+                  "currency": "INR",
+                  "value": "42.40"
+                }
+              }
+            },
+            {
+              "fulfillment_state": {
+                "descriptor": {
+                  "code": "Order-picked-up",
+                  "short_desc": "001,003"
+                }
+              },
+              "cancellation_fee": {
+                "percentage": "10.00",
+                "amount": {
+                  "currency": "INR",
+                  "value": "42.40"
+                }
+              }
+            },
+            {
+              "fulfillment_state": {
+                "descriptor": {
+                  "code": "Out-for-delivery",
+                  "short_desc": "009"
+                }
+              },
+              "cancellation_fee": {
+                "percentage": "0.00",
+                "amount": {
+                  "currency": "INR",
+                  "value": "0.00"
+                }
+              }
+            },
+            {
+              "fulfillment_state": {
+                "descriptor": {
+                  "code": "Out-for-delivery",
+                  "short_desc": "010,011,012,013,014,015"
+                }
+              },
+              "cancellation_fee": {
+                "percentage": "20.00",
+                "amount": {
+                  "currency": "INR",
+                  "value": "84.80"
+                }
+              }
+            }
+          ],
+          "tags": [
+            {
+              "code": "bpp_terms",
+              "list": [
+                {
+                  "code": "max_liability",
+                  "value": "2"
+                },
+                {
+                  "code": "max_liability_cap",
+                  "value": "10000.00"
+                },
+                {
+                  "code": "mandatory_arbitration",
+                  "value": "false"
+                },
+                {
+                  "code": "court_jurisdiction",
+                  "value": "Bengaluru"
+                },
+                {
+                  "code": "delay_interest",
+                  "value": "7.50"
+                },
+                {
+                  "code": "tax_number",
+                  "value": "gst_number_of_sellerNP"
+                },
+                {
+                  "code": "provider_tax_number",
+                  "value": "PAN_number_of_provider"
+                }
+              ]
+            }
+          ],
+          "params": {
+            "amount": "200",
+            "currency": "INR",
+            "transaction_id": "aedfcec6-958d-4759-8890-b8aea909a9d2"
+          },
+          "@ondc/org/buyer_app_finder_fee_amount": "0"
+        },
+        "created_at": "2025-04-05T01:52:18.000000Z",
+        "updated_at": "2025-04-05T01:52:18.000000Z"
+      }
+    }
+  }

@@ -1,0 +1,53 @@
+{
+    "context": {
+      "domain": "ONDC:RET12",
+      "country": "IND",
+      "city": "std:02525",
+      "core_version": "1.2.0",
+      "action": "select",
+      "transaction_id": "cedc9d37-59ce-4132-9fc6-76794001ac33",
+      "message_id": "645a2cb0-a4f9-4b70-8578-8e82ad0fe75d",
+      "timestamp": "2025-04-05T07:21:46.196Z",
+      "bap_uri": "https://pramaan.ondc.org/beta/preprod/mock/buyer",
+      "bap_id": "pramaan.ondc.org/beta/preprod/mock/buyer",
+      "ttl": "PT30S",
+      "bpp_id": "stageondc.unisellergy.in",
+      "bpp_uri": "https://stageondc.unisellergy.in/api/v1/pre-prod/"
+    },
+    "message": {
+      "order": {
+        "provider": {
+          "id": "12",
+          "locations": [
+            {
+              "id": "661"
+            }
+          ]
+        },
+        "items": [
+          {
+            "id": "19907",
+            "location_id": "661",
+            "quantity": {
+              "count": 1
+            }
+          }
+        ],
+        "fulfillments": [
+          {
+            "end": {
+              "location": {
+                "gps": "28.4554726,77.0219019",
+                "address": {
+                  "area_code": "122007"
+                }
+              }
+            }
+          }
+        ],
+        "payment": {
+          "type": "ON-ORDER"
+        }
+      }
+    }
+  }
