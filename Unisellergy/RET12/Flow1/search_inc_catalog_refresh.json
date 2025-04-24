@@ -1,34 +1,34 @@
 {
-    "context": {
-        "domain": "ONDC:RET12",
-        "action": "search",
-        "country": "IND",
-        "city": "std:02525",
-        "core_version": "1.2.0",
-        "bap_id": "buyer-app-preprod-v2.ondc.org",
-        "bap_uri": "https:\/\/buyer-app.ondc.org\/protocol\/v1",
-        "transaction_id": "aebf1725-8d9b-4f25-b78b-88009c7a32bf",
-        "message_id": "31a2bcf3-e7f4-40a2-a9f1-d94409b11360",
-        "timestamp": "2025-04-02T06:37:27.766Z",
-        "ttl": "PT30S"
-    },
-    "message": {
+  "context": {
+      "domain": "ONDC:RET12",
+      "action": "search",
+      "country": "IND",
+      "city": "*",
+      "core_version": "1.2.0",
+      "bap_id": "buyer-app-preprod-v2.ondc.org",
+      "bap_uri": "https:\/\/buyer-app-preprod-v2.ondc.org\/protocol\/v1",
+      "transaction_id": "fd71f4f6-cd17-47a1-84bd-7fb646c7347a",
+      "message_id": "8f5b0233-a932-4668-9786-c34d350e0b5d",
+      "timestamp": "2025-04-22T21:30:17.429Z",
+      "ttl": "PT30S"
+  },
+  "message": {
       "intent": {
-        "payment": {
-          "@ondc\/org\/buyer_app_finder_fee_type": "percent",
-          "@ondc\/org\/buyer_app_finder_fee_amount": "3"
-        },
-        "tags": [
-          {
-            "code": "catalog_inc",
-            "list": [
+          "payment": {
+              "@ondc\/org\/buyer_app_finder_fee_type": "percent",
+              "@ondc\/org\/buyer_app_finder_fee_amount": "3"
+          },
+          "tags": [
               {
-                "code": "mode",
-                "value": "stop"
+                  "code": "catalog_inc",
+                  "list": [
+                      {
+                          "code": "mode",
+                          "value": "start"
+                      }
+                  ]
               }
-            ]
-          }
-        ]
+          ]
       }
-    }
   }
+}
