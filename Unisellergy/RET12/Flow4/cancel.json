@@ -1,0 +1,21 @@
+{
+    "context": {
+        "domain": "ONDC:RET12",
+        "city": "std:022",
+        "bap_id": "pramaan.ondc.org/beta/preprod/mock/buyer",
+        "bap_uri": "https://pramaan.ondc.org/beta/preprod/mock/buyer",
+        "bpp_id": "stageondc.unisellergy.in",
+        "bpp_uri": "https://stageondc.unisellergy.in/api/v1/pre-prod/",
+        "transaction_id": "13bf8214-a1b5-4faa-9007-9282b7ed3c62",
+        "message_id": "0e25bbca-29cc-4da2-a36b-b6d105ea31ac",
+        "timestamp": "2025-05-15T10:51:44.880Z",
+        "action": "cancel",
+        "core_version": "1.2.0",
+        "country": "IND",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "order_id": "SS1747305150939",
+        "cancellation_reason_id": "001"
+    }
+}

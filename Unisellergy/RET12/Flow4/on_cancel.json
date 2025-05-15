@@ -1,0 +1,323 @@
+{
+    "context": {
+        "domain": "ONDC:RET12",
+        "city": "std:022",
+        "bap_id": "pramaan.ondc.org\/beta\/preprod\/mock\/buyer",
+        "bap_uri": "https:\/\/pramaan.ondc.org\/beta\/preprod\/mock\/buyer",
+        "bpp_id": "stageondc.unisellergy.in",
+        "bpp_uri": "https:\/\/stageondc.unisellergy.in\/api\/v1\/pre-prod\/",
+        "transaction_id": "13bf8214-a1b5-4faa-9007-9282b7ed3c62",
+        "message_id": "c08e36b4-5a37-4cc8-8cb1-e7d1d036a216",
+        "timestamp": "2025-05-15T11:11:55.957Z",
+        "action": "on_cancel",
+        "core_version": "1.2.0",
+        "country": "IND",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "order": {
+            "id": "SS1747305150939",
+            "state": "Cancelled",
+            "provider": {
+                "id": 128,
+                "locations": [
+                    {
+                        "id": "1"
+                    }
+                ]
+            },
+            "items": [
+                {
+                    "id": "22718",
+                    "fulfillment_id": "1",
+                    "quantity": {
+                        "count": 1
+                    }
+                }
+            ],
+            "billing": {
+                "address": {
+                    "name": "Nirdosh Chauhan",
+                    "building": "221 B",
+                    "locality": "Baker Steeet",
+                    "city": "Gurgaon",
+                    "state": "Haryana",
+                    "country": "India",
+                    "area_code": "122007"
+                },
+                "tax_number": "00ABCDE1234F1Z5",
+                "name": "Nirdosh Chauhan",
+                "email": "nirdosh.chauhan@sequelstring.com",
+                "phone": "9876543210",
+                "created_at": "2025-05-15T10:32:15.898Z",
+                "updated_at": "2025-05-15T10:32:15.898Z"
+            },
+            "cancellation": {
+                "cancelled_by": "pramaan.ondc.org\/beta\/preprod\/mock\/buyer",
+                "reason": {
+                    "id": "001"
+                }
+            },
+            "fulfillments": [
+                {
+                    "id": "1",
+                    "@ondc\/org\/provider_name": "Ship_Rocket_Courier_Partner",
+                    "state": {
+                        "descriptor": {
+                            "code": "Cancelled"
+                        }
+                    },
+                    "type": "Delivery",
+                    "tracking": false,
+                    "@ondc\/org\/TAT": "PT24H",
+                    "start": {
+                        "location": {
+                            "id": "1",
+                            "descriptor": {
+                                "name": "Ship_Rocket_Courier_Partner"
+                            },
+                            "gps": "19.1738172,72.8566659",
+                            "address": {
+                                "locality": "Italian Compound, Itt Bhatti, Goregaon",
+                                "city": "Mumbai",
+                                "area_code": "02525",
+                                "state": "Maharashtra"
+                            }
+                        },
+                        "time": {
+                            "range": {
+                                "start": "2023-06-03T10:00:00.000Z",
+                                "end": "2023-06-03T10:00:00.000Z"
+                            }
+                        },
+                        "contact": {
+                            "phone": "9503644277",
+                            "email": "sandeep.y@ebrandz.us"
+                        }
+                    },
+                    "end": {
+                        "location": {
+                            "gps": "28.4554726,77.0219019",
+                            "address": {
+                                "name": "Nirdosh Chauhan",
+                                "building": "221 B",
+                                "locality": "Baker Steeet",
+                                "city": "Gurgaon",
+                                "state": "Haryana",
+                                "country": "India",
+                                "area_code": "122007"
+                            }
+                        },
+                        "person": {
+                            "name": "Nirdosh Chauhan"
+                        },
+                        "contact": {
+                            "phone": "9876543210",
+                            "email": "nirdosh.chauhan@sequelstring.com"
+                        }
+                    },
+                    "tags": [
+                        {
+                            "code": "cancel_request",
+                            "list": [
+                                {
+                                    "code": "reason_id",
+                                    "value": "001"
+                                },
+                                {
+                                    "code": "initiated_by",
+                                    "value": "pramaan.ondc.org\/beta\/preprod\/mock\/buyer"
+                                }
+                            ]
+                        },
+                        {
+                            "code": "igm_request",
+                            "list": [
+                                {
+                                    "code": "id",
+                                    "value": "1"
+                                }
+                            ]
+                        },
+                        {
+                            "code": "precancel_state",
+                            "list": [
+                                {
+                                    "code": "fulfillment_state",
+                                    "value": "Created"
+                                },
+                                {
+                                    "code": "updated_at",
+                                    "value": "2025-05-15T11:11:56.017Z"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "c1",
+                    "type": "Cancel",
+                    "state": {
+                        "descriptor": {
+                            "code": "Cancelled"
+                        }
+                    },
+                    "tags": [
+                        {
+                            "code": "quote_trail",
+                            "list": [
+                                {
+                                    "code": "type",
+                                    "value": "item"
+                                },
+                                {
+                                    "code": "id",
+                                    "value": "22718"
+                                },
+                                {
+                                    "code": "currency",
+                                    "value": "INR"
+                                },
+                                {
+                                    "code": "value",
+                                    "value": "100"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "200"
+                },
+                "breakup": [
+                    {
+                        "@ondc\/org\/item_id": "22718",
+                        "@ondc\/org\/item_quantity": {
+                            "count": 0
+                        },
+                        "title": "Shirt Black",
+                        "@ondc\/org\/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "100"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc\/org\/item_id": "1",
+                        "title": "Delivery charges",
+                        "@ondc\/org\/title_type": "delivery",
+                        "price": {
+                            "currency": "INR",
+                            "value": "100"
+                        }
+                    },
+                    {
+                        "@ondc\/org\/item_id": "1",
+                        "title": "Tax",
+                        "@ondc\/org\/title_type": "tax",
+                        "price": {
+                            "currency": "INR",
+                            "value": "50"
+                        },
+                        "item": {
+                            "tags": [
+                                {
+                                    "code": "quote",
+                                    "list": [
+                                        {
+                                            "code": "type",
+                                            "value": "fulfillment"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "quote",
+                                    "list": [
+                                        {
+                                            "code": "type",
+                                            "value": "fulfillment"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "@ondc\/org\/item_id": "1",
+                        "title": "Packing charges",
+                        "@ondc\/org\/title_type": "packing",
+                        "price": {
+                            "currency": "INR",
+                            "value": "25"
+                        }
+                    },
+                    {
+                        "@ondc\/org\/item_id": "1",
+                        "title": "Convenience Fee",
+                        "@ondc\/org\/title_type": "misc",
+                        "price": {
+                            "currency": "INR",
+                            "value": "25"
+                        }
+                    }
+                ],
+                "ttl": "P1D"
+            },
+            "payment": {
+                "type": "ON-ORDER",
+                "collected_by": "BAP",
+                "uri": "https:\/\/snp.com\/pg",
+                "status": "PAID",
+                "@ondc\/org\/buyer_app_finder_fee_type": "percent",
+                "@ondc\/org\/buyer_app_finder_fee_amount": "0",
+                "@ondc\/org\/settlement_basis": "delivery",
+                "@ondc\/org\/settlement_window": "P1D",
+                "@ondc\/org\/withholding_amount": "10.00",
+                "tags": [
+                    {
+                        "code": "bpp_collect",
+                        "list": [
+                            {
+                                "code": "success",
+                                "value": "Y"
+                            },
+                            {
+                                "code": "error",
+                                "value": ".."
+                            }
+                        ]
+                    }
+                ],
+                "@ondc\/org\/settlement_details": [
+                    {
+                        "settlement_counterparty": "seller-app",
+                        "settlement_phase": "sale-amount",
+                        "settlement_type": "upi",
+                        "settlement_bank_account_no": "1234567890",
+                        "settlement_ifsc_code": "ICIC0001234",
+                        "bank_name": "ICICI Bank",
+                        "branch_name": "Mumbai",
+                        "beneficiary_name": "Kartik",
+                        "upi_address": "kartik@upi"
+                    }
+                ],
+                "params": {
+                    "amount": "300",
+                    "currency": "INR",
+                    "transaction_id": "22dd648f-873a-4285-85f6-a9a1b7fcef32"
+                }
+            },
+            "created_at": "2025-05-15 16:02:33",
+            "updated_at": "2025-05-15 16:02:33"
+        }
+    }
+}

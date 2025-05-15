@@ -1,0 +1,471 @@
+{
+    "context": {
+        "domain": "ONDC:RET12",
+        "city": "std:022",
+        "bap_id": "pramaan.ondc.org/beta/preprod/mock/buyer",
+        "bap_uri": "https://pramaan.ondc.org/beta/preprod/mock/buyer",
+        "bpp_id": "stageondc.unisellergy.in",
+        "bpp_uri": "https://stageondc.unisellergy.in/api/v1/pre-prod/",
+        "transaction_id": "13bf8214-a1b5-4faa-9007-9282b7ed3c62",
+        "message_id": "e66514d8-6e96-44d3-8901-a8542dbba0a2",
+        "timestamp": "2025-05-15T10:19:15.306Z",
+        "country": "IND",
+        "core_version": "1.2.0",
+        "action": "on_search",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "catalog": {
+            "bpp/descriptor": {
+                "name": "UniSellerg",
+                "symbol": "https://www.imagesbazaar.com/moreinfo/SM1074626",
+                "short_desc": "UniSeller Marketplace",
+                "long_desc": "UniSeller Marketplace",
+                "images": [
+                    "https://www.imagesbazaar.com/moreinfo/SM1074626"
+                ],
+                "tags": [
+                    {
+                        "code": "bpp_terms",
+                        "list": [
+                            {
+                                "code": "np_type",
+                                "value": "MSN"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bpp/providers": [
+                {
+                    "id": "128",
+                    "time": {
+                        "label": "enable",
+                        "timestamp": "2025-05-15T08:49:36.000Z"
+                    },
+                    "fulfillments": [
+                        {
+                            "id": "1",
+                            "type": "Delivery",
+                            "contact": {
+                                "phone": "9503644277",
+                                "email": "sandeep.y@ebrandz.us"
+                            }
+                        }
+                    ],
+                    "descriptor": {
+                        "name": "SandeepLocal",
+                        "symbol": "https://unistage-bucket.s3.ap-south-1.amazonaws.com/ondc_symbol_images/129_680642df18adf.jpg",
+                        "short_desc": "SandeepLocal",
+                        "long_desc": "SandeepLocal",
+                        "images": [
+                            "{\"otherImage1\": \"https://unistage-bucket.s3.ap-south-1.amazonaws.com/ondc_banner_images/129_680642e0025bb.jpg\"}"
+                        ]
+                    },
+                    "ttl": "P1D",
+                    "locations": [
+                        {
+                            "id": "697",
+                            "time": {
+                                "label": "enable",
+                                "timestamp": "2025-04-21T13:06:42.000Z",
+                                "days": "1, 2, 3, 4, 5, 6, 7",
+                                "schedule": {
+                                    "holidays": [
+                                        "2025-10-01",
+                                        "2025-10-02"
+                                    ],
+                                    "frequency": "PT8H",
+                                    "times": [
+                                        "1100",
+                                        "2100"
+                                    ]
+                                }
+                            },
+                            "gps": "19.1738172, 72.8566659",
+                            "address": {
+                                "locality": "Italian Compound",
+                                "street": "Italian Compound, Itt Bhatti, Goregaon",
+                                "city": "Mumbai",
+                                "area_code": "400097",
+                                "state": "Maharashtra"
+                            },
+                            "circle": {
+                                "gps": "19.1738172, 72.8566659",
+                                "radius": {
+                                    "unit": "km",
+                                    "value": "500"
+                                }
+                            }
+                        }
+                    ],
+                    "categories": [
+                        {
+                            "id": "1",
+                            "descriptor": {
+                                "name": "Shirts",
+                                "short_desc": "Best Category to start with.",
+                                "long_desc": "Best Category to start with.",
+                                "images": [
+                                    "https://example.com/category_image.jpg"
+                                ]
+                            },
+                            "tags": [
+                                {
+                                    "code": "type",
+                                    "list": [
+                                        {
+                                            "code": "type",
+                                            "value": "variant_group"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "attr",
+                                    "list": [
+                                        {
+                                            "code": "name",
+                                            "value": "item.tags.attribute.category"
+                                        },
+                                        {
+                                            "code": "seq",
+                                            "value": "1"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "attr",
+                                    "list": [
+                                        {
+                                            "code": "name",
+                                            "value": "item.tags.attribute.gender"
+                                        },
+                                        {
+                                            "code": "seq",
+                                            "value": "2"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "attr",
+                                    "list": [
+                                        {
+                                            "code": "name",
+                                            "value": "item.tags.attribute.colour"
+                                        },
+                                        {
+                                            "code": "seq",
+                                            "value": "3"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "attr",
+                                    "list": [
+                                        {
+                                            "code": "name",
+                                            "value": "item.tags.attribute.size"
+                                        },
+                                        {
+                                            "code": "seq",
+                                            "value": "4"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "attr",
+                                    "list": [
+                                        {
+                                            "code": "name",
+                                            "value": "item.tags.attribute.brand"
+                                        },
+                                        {
+                                            "code": "seq",
+                                            "value": "5"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "attr",
+                                    "list": [
+                                        {
+                                            "code": "name",
+                                            "value": "item.tags.attribute.size_chart"
+                                        },
+                                        {
+                                            "code": "seq",
+                                            "value": "6"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "2",
+                            "descriptor": {
+                                "name": "T Shirts",
+                                "short_desc": "Best Category to start with.",
+                                "long_desc": "Best Category to start with.",
+                                "images": [
+                                    "https://example.com/category_image.jpg"
+                                ]
+                            },
+                            "tags": [
+                                {
+                                    "code": "type",
+                                    "list": [
+                                        {
+                                            "code": "type",
+                                            "value": "variant_group"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "attr",
+                                    "list": [
+                                        {
+                                            "code": "name",
+                                            "value": "item.tags.attribute.category"
+                                        },
+                                        {
+                                            "code": "seq",
+                                            "value": "1"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "attr",
+                                    "list": [
+                                        {
+                                            "code": "name",
+                                            "value": "item.tags.attribute.gender"
+                                        },
+                                        {
+                                            "code": "seq",
+                                            "value": "2"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "attr",
+                                    "list": [
+                                        {
+                                            "code": "name",
+                                            "value": "item.tags.attribute.colour"
+                                        },
+                                        {
+                                            "code": "seq",
+                                            "value": "3"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "attr",
+                                    "list": [
+                                        {
+                                            "code": "name",
+                                            "value": "item.tags.attribute.size"
+                                        },
+                                        {
+                                            "code": "seq",
+                                            "value": "4"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "attr",
+                                    "list": [
+                                        {
+                                            "code": "name",
+                                            "value": "item.tags.attribute.brand"
+                                        },
+                                        {
+                                            "code": "seq",
+                                            "value": "5"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "attr",
+                                    "list": [
+                                        {
+                                            "code": "name",
+                                            "value": "item.tags.attribute.size_chart"
+                                        },
+                                        {
+                                            "code": "seq",
+                                            "value": "6"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "items": [
+                        {
+                            "id": "22718",
+                            "time": {
+                                "label": "enable",
+                                "timestamp": "2025-04-21T13:04:04.000Z"
+                            },
+                            "descriptor": {
+                                "name": "Shirt Black",
+                                "code": "4:5787",
+                                "symbol": "https://m.media-amazon.com/images/I/31zV8m8OZWL.jpg",
+                                "short_desc": "Shirt Black",
+                                "long_desc": "Shirt Black",
+                                "images": [
+                                    "https://m.media-amazon.com/images/I/31zV8m8OZWL.jpg"
+                                ]
+                            },
+                            "quantity": {
+                                "unitized": {
+                                    "measure": {
+                                        "unit": "unit",
+                                        "value": "1"
+                                    }
+                                },
+                                "available": {
+                                    "count": "89"
+                                },
+                                "maximum": {
+                                    "count": "100"
+                                }
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "100",
+                                "maximum_value": "100"
+                            },
+                            "category_id": "Shirts",
+                            "fulfillment_id": "1",
+                            "location_id": "697",
+                            "@ondc/org/returnable": true,
+                            "@ondc/org/cancellable": true,
+                            "@ondc/org/return_window": "P7D",
+                            "@ondc/org/seller_pickup_return": false,
+                            "@ondc/org/time_to_ship": "PT45M",
+                            "@ondc/org/available_on_cod": false,
+                            "@ondc/org/contact_details_consumer_care": "N.A",
+                            "@ondc/org/statutory_reqs_packaged_commodities": {
+                                "manufacturer_or_packer_name": "N/A",
+                                "manufacturer_or_packer_address": "N/A",
+                                "common_or_generic_name_of_commodity": "N/A",
+                                "month_year_of_manufacture_packing_import": "N.A"
+                            },
+                            "tags": [
+                                {
+                                    "code": "origin",
+                                    "list": [
+                                        {
+                                            "code": "country",
+                                            "value": "IND"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "attribute",
+                                    "list": [
+                                        {
+                                            "code": "gender",
+                                            "value": "male"
+                                        },
+                                        {
+                                            "code": "colour",
+                                            "value": "#FF7F50"
+                                        },
+                                        {
+                                            "code": "colour_name",
+                                            "value": "coral"
+                                        },
+                                        {
+                                            "code": "size",
+                                            "value": "S"
+                                        },
+                                        {
+                                            "code": "brand",
+                                            "value": "Allen Solly"
+                                        },
+                                        {
+                                            "code": "size_chart",
+                                            "value": "https://sellerNP.com/images/i1_size_chart.png"
+                                        },
+                                        {
+                                            "code": "fabric",
+                                            "value": "cotton"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "tags": [
+                        {
+                            "code": "order_value",
+                            "list": [
+                                {
+                                    "code": "min_value",
+                                    "value": "300.0"
+                                }
+                            ]
+                        },
+                        {
+                            "code": "timing",
+                            "list": [
+                                {
+                                    "code": "type",
+                                    "value": "All"
+                                },
+                                {
+                                    "code": "location",
+                                    "value": "697"
+                                },
+                                {
+                                    "code": "day_from",
+                                    "value": "1"
+                                },
+                                {
+                                    "code": "day_to",
+                                    "value": "1"
+                                },
+                                {
+                                    "code": "time_from",
+                                    "value": "0000"
+                                },
+                                {
+                                    "code": "time_to",
+                                    "value": "2359"
+                                }
+                            ]
+                        },
+                        {
+                            "code": "serviceability",
+                            "list": [
+                                {
+                                    "code": "location",
+                                    "value": "697"
+                                },
+                                {
+                                    "code": "category",
+                                    "value": "Shirts"
+                                },
+                                {
+                                    "code": "type",
+                                    "value": "12"
+                                },
+                                {
+                                    "code": "val",
+                                    "value": "IND"
+                                },
+                                {
+                                    "code": "unit",
+                                    "value": "country"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
