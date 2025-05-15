@@ -1,60 +1,50 @@
 {
-    "context": {
+  "context": {
       "domain": "ONDC:RET12",
       "country": "IND",
-      "city": "std:02525",
-      "core_version": "1.2.0",
+      "city": "std:022",
       "action": "select",
-      "transaction_id": "3e51e5a2-09ab-4f92-b6d8-dfbff80a5ed4",
-      "message_id": "8e20fe18-a558-4003-9e7c-8da746820898",
-      "timestamp": "2025-04-04T08:22:59.846Z",
-      "bap_uri": "https://pramaan.ondc.org/beta/preprod/mock/buyer",
-      "bap_id": "pramaan.ondc.org/beta/preprod/mock/buyer",
-      "ttl": "PT30S",
+      "core_version": "1.2.0",
+      "bap_id": "buyer-app-preprod-v2.ondc.org",
+      "bap_uri": "https:\/\/buyer-app-preprod-v2.ondc.org\/protocol\/v1",
+      "bpp_uri": "https:\/\/stageondc.unisellergy.in\/api\/v1\/pre-prod\/",
+      "transaction_id": "aee851f3-e3c8-4500-a2fe-2a6eb208e8da",
+      "message_id": "e5b236f0-8625-46eb-a6d8-324443701620",
+      "timestamp": "2025-05-13T10:57:40.689Z",
       "bpp_id": "stageondc.unisellergy.in",
-      "bpp_uri": "https://stageondc.unisellergy.in/api/v1/pre-prod/"
-    },
-    "message": {
+      "ttl": "PT30S"
+  },
+  "message": {
       "order": {
-        "provider": {
-          "id": "12",
-          "locations": [
-            {
-              "id": "661"
-            }
-          ]
-        },
-        "items": [
-          {
-            "id": "19907",
-            "location_id": "661",
-            "quantity": {
-              "count": 1
-            }
-          },
-          {
-            "id": "19909",
-            "location_id": "661",
-            "quantity": {
-              "count": 2
-            }
-          }
-        ],
-        "fulfillments": [
-          {
-            "end": {
-              "location": {
-                "gps": "28.4554726,77.0219019",
-                "address": {
-                  "area_code": "122007"
-                }
+          "items": [
+              {
+                  "id": "22718",
+                  "quantity": {
+                      "count": 3
+                  },
+                  "location_id": "697"
               }
-            }
-          }
-        ],
-        "payment": {
-          "type": "ON-ORDER"
-        }
+          ],
+          "provider": {
+              "id": "128",
+              "locations": [
+                  {
+                      "id": "697"
+                  }
+              ]
+          },
+          "fulfillments": [
+              {
+                  "end": {
+                      "location": {
+                          "gps": "19.173978,72.856644",
+                          "address": {
+                              "area_code": "400097"
+                          }
+                      }
+                  }
+              }
+          ]
       }
-    }
   }
+}

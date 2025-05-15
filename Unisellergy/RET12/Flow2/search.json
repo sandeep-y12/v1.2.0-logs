@@ -1,34 +1,26 @@
 {
-    "context": {
+  "context": {
       "domain": "ONDC:RET12",
-      "country": "IND",
-      "city": "std:02525",
-      "core_version": "1.2.0",
       "action": "search",
-      "transaction_id": "3e51e5a2-09ab-4f92-b6d8-dfbff80a5ed4",
-      "message_id": "9fb59457-0b07-4d41-a98d-8cc957e27932",
-      "timestamp": "2025-04-04T08:22:33.712Z",
-      "bap_uri": "https://pramaan.ondc.org/beta/preprod/mock/buyer",
-      "bap_id": "pramaan.ondc.org/beta/preprod/mock/buyer",
+      "country": "IND",
+      "city": "std:022",
+      "core_version": "1.2.0",
+      "bap_id": "buyer-app-preprod-v2.ondc.org",
+      "bap_uri": "https:\/\/buyer-app-preprod-v2.ondc.org\/protocol\/v1",
+      "transaction_id": "7eb7f889-64a6-4f15-82e5-960aa6a09c6a",
+      "message_id": "cd1d522e-1bff-4321-b70a-a456f3b5a243",
+      "timestamp": "2025-05-13T00:00:01.237Z",
       "ttl": "PT30S"
-    },
-    "message": {
+  },
+  "message": {
       "intent": {
-        "payment": {
-          "@ondc/org/buyer_app_finder_fee_type": "percent",
-          "@ondc/org/buyer_app_finder_fee_amount": "3"
-        },
-        "tags": [
-          {
-            "code": "catalog_full",
-            "list": [
-              {
-                "code": "payload_type",
-                "value": "inline"
-              }
-            ]
+          "fulfillment": {
+              "type": "Delivery"
+          },
+          "payment": {
+              "@ondc\/org\/buyer_app_finder_fee_type": "percent",
+              "@ondc\/org\/buyer_app_finder_fee_amount": "3"
           }
-        ]
       }
-    }
   }
+}

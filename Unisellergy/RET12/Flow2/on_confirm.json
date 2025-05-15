@@ -1,195 +1,213 @@
 {
-    "context": {
-      "domain": "ONDC:RET12",
-      "city": "std:02525",
-      "bap_id": "pramaan.ondc.org/beta/preprod/mock/buyer",
-      "bap_uri": "https://pramaan.ondc.org/beta/preprod/mock/buyer",
-      "bpp_id": "stageondc.unisellergy.in",
-      "bpp_uri": "https://stageondc.unisellergy.in/api/v1/pre-prod/",
-      "transaction_id": "3e51e5a2-09ab-4f92-b6d8-dfbff80a5ed4",
-      "message_id": "c92eac9a-5b9b-4cd1-ab03-c164b22a9103",
-      "timestamp": "2025-04-04T08:23:33.686Z",
-      "action": "on_confirm",
-      "core_version": "1.2.0",
-      "country": "IND"
-    },
-    "message": {
-      "order": {
-        "id": "SS1743755013088",
-        "state": "Accepted",
-        "provider": {
-          "id": "12",
-          "locations": [
-            {
-              "id": "661"
-            }
-          ],
-          "items": [
-            {
-              "id": "19907",
-              "location_id": "661",
-              "quantity": {
-                "count": 1
-              },
-              "fulfillment_id": "1"
-            },
-            {
-              "id": "19909",
-              "location_id": "661",
-              "quantity": {
-                "count": 2
-              },
-              "fulfillment_id": "1"
-            }
-          ],
-          "billing": {
-            "address": {
-              "name": "Nirdosh Chauhan",
-              "building": "221 B",
-              "locality": "Baker Steeet",
-              "city": "Gurgaon",
-              "state": "Haryana",
-              "country": "India",
-              "area_code": "122007"
-            },
-            "tax_number": "00ABCDE1234F1Z5",
-            "name": "Nirdosh Chauhan",
-            "email": "nirdosh.chauhan@sequelstring.com",
-            "phone": "9876543210",
-            "created_at": "2025-04-04T08:23:17.214Z",
-            "updated_at": "2025-04-04T08:23:17.214Z"
+  "context": {
+    "domain": "ONDC:RET12",
+    "city": "std:022",
+    "bap_id": "buyer-app-preprod-v2.ondc.org",
+    "bap_uri": "https:\/\/buyer-app-preprod-v2.ondc.org\/protocol\/v1",
+    "bpp_id": "stageondc.unisellergy.in",
+    "bpp_uri": "https:\/\/stageondc.unisellergy.in\/api\/v1\/pre-prod\/",
+    "transaction_id": "aee851f3-e3c8-4500-a2fe-2a6eb208e8da",
+    "message_id": "c5a100d1-8abe-42d4-9d11-89d4e87c0c1a",
+    "timestamp": "2025-05-13T10:58:24.202Z",
+    "action": "on_confirm",
+    "core_version": "1.2.0",
+    "country": "IND"
+  },
+  "message": {
+    "order": {
+      "id": "2025-05-13-908437",
+      "state": "Created",
+      "provider": {
+        "id": "128",
+        "locations": [
+          {
+            "id": "697"
           }
+        ]
+      },
+      "items": [
+        {
+          "id": "22718",
+          "quantity": {
+            "count": 3
+          },
+          "fulfillment_id": "1"
+        }
+      ],
+      "billing": {
+        "address": {
+          "name": "Sandeep Yadav",
+          "building": "Ganesh Apt.",
+          "locality": "Goregaon Mulund Link Road",
+          "city": "Mumbai",
+          "state": "Maharashtra",
+          "country": "IND",
+          "area_code": "400097"
         },
-        "fulfillments": {
+        "phone": "9503644277",
+        "name": "Sandeep Yadav",
+        "email": "unisellergy@ebrandz.com",
+        "created_at": "2025-05-13T10:57:54.396Z",
+        "updated_at": "2025-05-13T10:57:54.396Z"
+      },
+      "fulfillments": [
+        {
           "id": "1",
-          "@ondc/org/provider_name": "Ship_Rocket_Courier_Partner",
+          "@ondc\/org\/provider_name": "Ship_Rocket_Courier_Partner",
           "state": {
             "descriptor": {
               "code": "Pending"
             }
           },
           "type": "Delivery",
-          "tracking": true,
-          "@ondc/org/TAT": "PT24H",
+          "tracking": false,
+          "@ondc\/org\/TAT": "PT24H",
           "start": {
             "location": {
-              "id": "661",
+              "id": "697",
               "descriptor": {
-                "name": "UniSeller"
+                "name": "SandeepLocal2"
               },
-              "gsp": "18.9487057 , 72.8288061",
+              "gps": "19.1738172,72.8566659",
               "address": {
-                "locality": "Test Location",
+                "locality": "Italian Compound, Itt Bhatti, Goregaon",
                 "city": "Mumbai",
-                "area_code": "02525"
+                "area_code": "02525",
+                "state": "Maharashtra"
               }
             },
             "contact": {
               "phone": "9503644277",
-              "email": "sandeep.y@enbrandz.us"
+              "email": "sandeep.y@ebrandz.us"
             }
           },
           "end": {
             "location": {
-              "gps": "28.4554726,77.0219019",
+              "gps": "19.173978,72.856644",
               "address": {
-                "name": "Nirdosh Chauhan",
-                "building": "221 B",
-                "locality": "Baker Steeet",
-                "city": "Gurgaon",
-                "state": "Haryana",
-                "country": "India",
-                "area_code": "122007"
+                "name": "Sandeep Yadav",
+                "building": "Ganesh Apt.",
+                "locality": "Goregaon Mulund Link Road",
+                "city": "Mumbai",
+                "state": "Maharashtra",
+                "country": "IND",
+                "area_code": "400097"
               }
             },
-            "person": "Nirdosh Chauhan",
+            "person": {
+              "name": "Sandeep Yadav"
+            },
             "contact": {
-              "phone": "9876543210",
-              "email": "nirdosh.chauhan@sequelstring.com"
+              "email": "unisellergy@ebrandz.com",
+              "phone": "9503644277"
             }
           }
+        }
+      ],
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "500"
         },
-        "quote": {
-          "price": {
-            "currency": "INR",
-            "value": "1000"
-          },
-          "breakup": [
-            {
-              "@ondc/org/item_id": "19907",
-              "@ondc/org/item_quantity": {
-                "count": 1
-              },
-              "title": "Shirt Black",
-              "@ondc/org/title_type": "item",
-              "price": {
-                "currency": "INR",
-                "value": "100"
-              },
-              "item": {
-                "quantity": {
-                  "available": {
-                    "count": "0"
-                  },
-                  "maximum": {
-                    "count": "0"
-                  }
-                },
-                "price": {
-                  "currency": "INR",
-                  "value": "100"
-                }
-              }
+        "breakup": [
+          {
+            "@ondc\/org\/item_id": "22718",
+            "@ondc\/org\/item_quantity": {
+              "count": 3
             },
-            {
-              "@ondc/org/item_id": "19909",
-              "@ondc/org/item_quantity": {
-                "count": 2
-              },
-              "title": "Men's Medium Casual Cotton Shirt White",
-              "@ondc/org/title_type": "item",
-              "price": {
-                "currency": "INR",
-                "value": "800"
-              },
-              "item": {
-                "quantity": {
-                  "available": {
-                    "count": "0"
-                  },
-                  "maximum": {
-                    "count": "0"
-                  }
-                },
-                "price": {
-                  "currency": "INR",
-                  "value": "400"
-                }
-              }
+            "title": "Shirt Black",
+            "@ondc\/org\/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "300"
             },
-            {
-              "@ondc/org/item_id": "1",
-              "title": "Delivery charges",
-              "@ondc/org/title_type": "delivery",
+            "item": {
               "price": {
                 "currency": "INR",
                 "value": "100"
               }
             }
-          ],
-          "ttl": "P1D"
+          },
+          {
+            "@ondc\/org\/item_id": "1",
+            "title": "Delivery charges",
+            "@ondc\/org\/title_type": "delivery",
+            "price": {
+              "currency": "INR",
+              "value": "100"
+            }
+          },
+          {
+            "@ondc\/org\/item_id": "1",
+            "title": "Tax",
+            "@ondc\/org\/title_type": "tax",
+            "price": {
+              "currency": "INR",
+              "value": "50"
+            },
+            "item": {
+              "tags": [
+                {
+                  "code": "quote",
+                  "list": [
+                    {
+                      "code": "type",
+                      "value": "fulfillment"
+                    }
+                  ]
+                },
+                {
+                  "code": "quote",
+                  "list": [
+                    {
+                      "code": "type",
+                      "value": "fulfillment"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "@ondc\/org\/item_id": "1",
+            "title": "Packing charges",
+            "@ondc\/org\/title_type": "packing",
+            "price": {
+              "currency": "INR",
+              "value": "25"
+            }
+          },
+          {
+            "@ondc\/org\/item_id": "1",
+            "title": "Convenience Fee",
+            "@ondc\/org\/title_type": "misc",
+            "price": {
+              "currency": "INR",
+              "value": "25"
+            }
+          }
+        ],
+        "ttl": "P1D"
+      },
+      "payment": {
+        "uri": "https:\/\/razorpay.com\/",
+        "tl_method": "http\/get",
+        "params": {
+          "amount": "500.00",
+          "currency": "INR",
+          "transaction_id": "order_QUO8ut9AkBAtqI"
         },
-        "payment": {
-          "type": "ON-ORDER",
-          "collected_by": "BAP",
-          "uri": "https://snp.com/pg",
-          "status": "PAID",
-          "@ondc/org/buyer_app_finder_fee_type": "percent",
-          "@ondc/org/settlement_basis": "delivery",
-          "@ondc/org/settlement_window": "P1D",
-          "@ondc/org/withholding_amount": "10.00",
-          "@ondc/org/settlement_details": {
-            "settlement_counterparty": "UniSellergy",
+        "status": "PAID",
+        "type": "ON-ORDER",
+        "collected_by": "BAP",
+        "@ondc\/org\/buyer_app_finder_fee_type": "percent",
+        "@ondc\/org\/buyer_app_finder_fee_amount": "3.0",
+        "@ondc\/org\/settlement_basis": "delivery",
+        "@ondc\/org\/settlement_window": "PT1H",
+        "@ondc\/org\/withholding_amount": "10",
+        "@ondc\/org\/settlement_details": [
+          {
+            "settlement_counterparty": "seller-app",
             "settlement_phase": "sale-amount",
             "settlement_type": "upi",
             "beneficiary_name": "Kartik",
@@ -198,155 +216,55 @@
             "beneficiary_ifsc": "ICIC0001234",
             "beneficiary_bank": "ICICI Bank",
             "beneficiary_branch": "Mumbai"
-          },
-          "cancellation_terms": [
-            {
-              "fulfillment_state": {
-                "descriptor": {
-                  "code": "Pending",
-                  "short_desc": "002"
-                }
-              },
-              "cancellation_fee": {
-                "percentage": "0.00",
-                "amount": {
-                  "currency": "INR",
-                  "value": "0.00"
-                }
-              }
-            },
-            {
-              "fulfillment_state": {
-                "descriptor": {
-                  "code": "Packed",
-                  "short_desc": "001,003"
-                }
-              },
-              "cancellation_fee": {
-                "percentage": "10.00",
-                "amount": {
-                  "currency": "INR",
-                  "value": "42.40"
-                }
-              }
-            },
-            {
-              "fulfillment_state": {
-                "descriptor": {
-                  "code": "Order-picked-up",
-                  "short_desc": "001,003"
-                }
-              },
-              "cancellation_fee": {
-                "percentage": "10.00",
-                "amount": {
-                  "currency": "INR",
-                  "value": "42.40"
-                }
-              }
-            },
-            {
-              "fulfillment_state": {
-                "descriptor": {
-                  "code": "Out-for-delivery",
-                  "short_desc": "009"
-                }
-              },
-              "cancellation_fee": {
-                "percentage": "0.00",
-                "amount": {
-                  "currency": "INR",
-                  "value": "0.00"
-                }
-              }
-            },
-            {
-              "fulfillment_state": {
-                "descriptor": {
-                  "code": "Out-for-delivery",
-                  "short_desc": "010,011,012,013,014,015"
-                }
-              },
-              "cancellation_fee": {
-                "percentage": "20.00",
-                "amount": {
-                  "currency": "INR",
-                  "value": "84.80"
-                }
-              }
-            }
-          ],
-          "tags": [
-            {
-              "code": "bpp_terms",
-              "list": [
-                {
-                  "code": "max_liability",
-                  "value": "2"
-                },
-                {
-                  "code": "max_liability_cap",
-                  "value": "10000.00"
-                },
-                {
-                  "code": "mandatory_arbitration",
-                  "value": "false"
-                },
-                {
-                  "code": "court_jurisdiction",
-                  "value": "Bengaluru"
-                },
-                {
-                  "code": "delay_interest",
-                  "value": "7.50"
-                },
-                {
-                  "code": "tax_number",
-                  "value": "gst_number_of_sellerNP"
-                },
-                {
-                  "code": "provider_tax_number",
-                  "value": "PAN_number_of_provider"
-                }
-              ]
-            }
-          ],
-          "params": {
-            "amount": "1000",
-            "currency": "INR",
-            "transaction_id": "9c297896-b121-4bd9-a7cd-9cea4798fc50"
           }
+        ]
+      },
+      "tags": [
+        {
+          "code": "bpp_terms",
+          "list": [
+            {
+              "code": "max_liability",
+              "value": "2"
+            },
+            {
+              "code": "max_liability_cap",
+              "value": "10000.00"
+            },
+            {
+              "code": "mandatory_arbitration",
+              "value": "false"
+            },
+            {
+              "code": "court_jurisdiction",
+              "value": "Mumbai"
+            },
+            {
+              "code": "delay_interest",
+              "value": "7.50"
+            },
+            {
+              "code": "tax_number",
+              "value": "00ABCDE1234F1Z7"
+            },
+            {
+              "code": "provider_tax_number",
+              "value": "AAIFU1012A"
+            }
+          ]
         },
-        "tags": [
-          {
-            "code": "bpp_terms",
-            "list": [
-              {
-                "code": "max_liability",
-                "value": "2"
-              },
-              {
-                "code": "max_liability_cap",
-                "value": "10000.00"
-              }
-            ]
-          },
-          {
-            "code": "bap_terms",
-            "list": [
-              {
-                "code": "tax_number",
-                "value": "00XYZAB1234C1Z8"
-              },
-              {
-                "code": "accept_bpp_terms",
-                "value": "Y"
-              }
-            ]
-          }
-        ],
-        "created_at": "2025-04-04T08:23:33.088Z",
-        "updated_at": "2025-04-04T08:23:33.088Z"
-      }
+        {
+          "code": "bap_terms",
+          "list": [
+            {
+              "code": "tax_number",
+              "value": "GSTIN1234567890"
+            }
+          ]
+        }
+      ],
+      "created_at": "2025-05-13T10:58:24.202Z",
+      "updated_at": "2025-05-13T10:58:24.202Z"
     }
   }
+}
