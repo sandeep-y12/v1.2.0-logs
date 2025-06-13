@@ -7,15 +7,17 @@
         "bpp_id": "stageondc.unisellergy.in",
         "bpp_uri": "https:\/\/stageondc.unisellergy.in\/api\/v1\/pre-prod\/",
         "transaction_id": "acece390-043d-4112-85f0-dd2efb84a511",
-        "message_id": "3d923d90-32d4-42c9-b2d6-43007b3bc6d5",
-        "timestamp": "2025-06-13T06:57:55.879Z",
+        "message_id": "66902ce7-c450-440a-b327-f6a8208ae39b",
+        "timestamp": "2025-06-13T07:19:45.212Z",
+        "action": "on_status",
         "country": "IND",
         "core_version": "1.2.0",
-        "action": "on_init",
         "ttl": "PT30S"
     },
     "message": {
         "order": {
+            "id": "2025-06-13-483820",
+            "state": "In-progress",
             "provider": {
                 "id": "140",
                 "locations": [
@@ -30,19 +32,18 @@
                     "quantity": {
                         "count": 1
                     },
-                    "location_id": "744",
                     "fulfillment_id": "1"
                 }
             ],
             "billing": {
                 "address": {
+                    "name": "Sandeep Yadav",
                     "building": "Ganesh Apt.",
+                    "locality": "Goregaon Mulund Link Road",
                     "city": "Mumbai",
                     "state": "Maharashtra",
                     "country": "IND",
-                    "area_code": "400097",
-                    "locality": "Goregaon Mulund Link Road",
-                    "name": "Sandeep Yadav"
+                    "area_code": "400097"
                 },
                 "phone": "9503644277",
                 "name": "Sandeep Yadav",
@@ -53,26 +54,95 @@
             "fulfillments": [
                 {
                     "id": "1",
+                    "@ondc\/org\/provider_name": "Ship_Rocket_Courier_Partner",
+                    "state": {
+                        "descriptor": {
+                            "code": "Out-for-delivery"
+                        }
+                    },
                     "type": "Delivery",
-                    "end": {
-                        "contact": {
-                            "email": "unisellergy@ebrandz.com",
-                            "phone": "9503644277"
+                    "tracking": false,
+                    "@ondc\/org\/TAT": "PT2H",
+                    "start": {
+                        "location": {
+                            "id": "744",
+                            "descriptor": {
+                                "name": "KiranGoregaonWarehouseInLocalTesting"
+                            },
+                            "gps": "19.1662566,72.8525696",
+                            "address": {
+                                "locality": "This is the test Provider for Retail domain",
+                                "city": "Goregaon",
+                                "area_code": 22,
+                                "state": "Maharashtra"
+                            }
                         },
+                        "contact": {
+                            "phone": "9503644277",
+                            "email": "sandeep.y@ebrandz.us"
+                        },
+                        "time": {
+                            "range": {
+                                "start": "2025-06-13T12:19:45.000Z",
+                                "end": "2025-06-13T07:19:45.212Z"
+                            },
+                            "timestamp": "2025-06-13T07:19:45.212Z"
+                        }
+                    },
+                    "end": {
                         "location": {
                             "gps": "19.173978,72.856644",
                             "address": {
+                                "name": "Sandeep Yadav",
                                 "building": "Ganesh Apt.",
+                                "locality": "Goregaon Mulund Link Road",
                                 "city": "Mumbai",
                                 "state": "Maharashtra",
                                 "country": "IND",
-                                "area_code": "400097",
-                                "locality": "Goregaon Mulund Link Road",
-                                "name": "Sandeep Yadav"
+                                "area_code": "400097"
                             }
+                        },
+                        "person": {
+                            "name": "Sandeep Yadav"
+                        },
+                        "contact": {
+                            "email": "unisellergy@ebrandz.com",
+                            "phone": "9503644277"
                         }
                     },
-                    "tracking": false
+                    "tags": [
+                        {
+                            "code": "status",
+                            "list": [
+                                {
+                                    "code": "out-for-delivery",
+                                    "value": "Order is out for delivery"
+                                }
+                            ]
+                        },
+                        {
+                            "code": "tracking",
+                            "list": [
+                                {
+                                    "code": "gps_enabled",
+                                    "value": "yes"
+                                },
+                                {
+                                    "code": "url_enabled",
+                                    "value": "no"
+                                }
+                            ]
+                        },
+                        {
+                            "code": "routing",
+                            "list": [
+                                {
+                                    "code": "type",
+                                    "value": "P2P"
+                                }
+                            ]
+                        }
+                    ]
                 }
             ],
             "quote": {
@@ -161,30 +231,21 @@
                 "ttl": "P1D"
             },
             "payment": {
+                "uri": "https:\/\/razorpay.com\/",
+                "tl_method": "http\/get",
+                "params": {
+                    "amount": "590.00",
+                    "currency": "INR",
+                    "transaction_id": "order_Qgac6u7Ua1aHQ4"
+                },
+                "status": "PAID",
                 "type": "ON-ORDER",
-                "collected_by": "BPP",
-                "uri": "https:\/\/snp.com\/pg",
-                "status": "NOT-PAID",
+                "collected_by": "BAP",
                 "@ondc\/org\/buyer_app_finder_fee_type": "percent",
-                "@ondc\/org\/buyer_app_finder_fee_amount": "3",
+                "@ondc\/org\/buyer_app_finder_fee_amount": "3.0",
                 "@ondc\/org\/settlement_basis": "delivery",
                 "@ondc\/org\/settlement_window": "PT1H",
                 "@ondc\/org\/withholding_amount": "10",
-                "tags": [
-                    {
-                        "code": "bpp_collect",
-                        "list": [
-                            {
-                                "code": "success",
-                                "value": "Y"
-                            },
-                            {
-                                "code": "error",
-                                "value": ".."
-                            }
-                        ]
-                    }
-                ],
                 "@ondc\/org\/settlement_details": [
                     {
                         "settlement_counterparty": "seller-app",
@@ -199,39 +260,12 @@
                     }
                 ]
             },
-            "tags": [
+            "created_at": "2025-06-13T07:19:45.212Z",
+            "updated_at": "2025-06-13T07:19:45.212Z",
+            "documents": [
                 {
-                    "code": "bpp_terms",
-                    "list": [
-                        {
-                            "code": "max_liability",
-                            "value": "2"
-                        },
-                        {
-                            "code": "max_liability_cap",
-                            "value": "10000.00"
-                        },
-                        {
-                            "code": "mandatory_arbitration",
-                            "value": "false"
-                        },
-                        {
-                            "code": "court_jurisdiction",
-                            "value": "Mumbai"
-                        },
-                        {
-                            "code": "delay_interest",
-                            "value": "7.50"
-                        },
-                        {
-                            "code": "tax_number",
-                            "value": "00ABCDE1234F1Z7"
-                        },
-                        {
-                            "code": "provider_tax_number",
-                            "value": "AAIFU1012A"
-                        }
-                    ]
+                    "url": "https:\/\/stageondc.unisellergy.in\/invoice\/SS1742793469328.pdf",
+                    "label": "Invoice"
                 }
             ]
         }

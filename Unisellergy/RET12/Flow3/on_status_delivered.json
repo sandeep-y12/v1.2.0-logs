@@ -1,23 +1,40 @@
 {
     "context": {
         "domain": "ONDC:RET12",
-        "country": "IND",
         "city": "std:022",
-        "action": "confirm",
-        "core_version": "1.2.0",
         "bap_id": "buyer-app-preprod-v2.ondc.org",
         "bap_uri": "https:\/\/buyer-app-preprod-v2.ondc.org\/protocol\/v1",
+        "bpp_id": "stageondc.unisellergy.in",
         "bpp_uri": "https:\/\/stageondc.unisellergy.in\/api\/v1\/pre-prod\/",
         "transaction_id": "acece390-043d-4112-85f0-dd2efb84a511",
-        "message_id": "3d471a42-54b4-440b-a941-82187b173e60",
-        "timestamp": "2025-06-13T06:59:02.422Z",
-        "bpp_id": "stageondc.unisellergy.in",
+        "message_id": "7d21c34a-7a48-46f6-987b-ef91176ff188",
+        "timestamp": "2025-06-13T07:22:15.908Z",
+        "action": "on_status",
+        "country": "IND",
+        "core_version": "1.2.0",
         "ttl": "PT30S"
     },
     "message": {
         "order": {
             "id": "2025-06-13-483820",
-            "state": "Created",
+            "state": "Completed",
+            "provider": {
+                "id": "140",
+                "locations": [
+                    {
+                        "id": "744"
+                    }
+                ]
+            },
+            "items": [
+                {
+                    "id": "28143",
+                    "quantity": {
+                        "count": 1
+                    },
+                    "fulfillment_id": "1"
+                }
+            ],
             "billing": {
                 "address": {
                     "name": "Sandeep Yadav",
@@ -34,36 +51,45 @@
                 "created_at": "2025-06-13T06:57:53.232Z",
                 "updated_at": "2025-06-13T06:57:53.232Z"
             },
-            "items": [
-                {
-                    "id": "28143",
-                    "quantity": {
-                        "count": 1
-                    },
-                    "fulfillment_id": "1"
-                }
-            ],
-            "provider": {
-                "id": "140",
-                "locations": [
-                    {
-                        "id": "744"
-                    }
-                ]
-            },
             "fulfillments": [
                 {
-                    "@ondc\/org\/TAT": "PT2H",
                     "id": "1",
+                    "@ondc\/org\/provider_name": "Ship_Rocket_Courier_Partner",
+                    "state": {
+                        "descriptor": {
+                            "code": "Order-delivered"
+                        }
+                    },
+                    "type": "Delivery",
                     "tracking": false,
-                    "end": {
+                    "@ondc\/org\/TAT": "PT2H",
+                    "start": {
+                        "location": {
+                            "id": "744",
+                            "descriptor": {
+                                "name": "KiranGoregaonWarehouseInLocalTesting"
+                            },
+                            "gps": "19.1662566,72.8525696",
+                            "address": {
+                                "locality": "This is the test Provider for Retail domain",
+                                "city": "Goregaon",
+                                "area_code": 22,
+                                "state": "Maharashtra"
+                            }
+                        },
                         "contact": {
-                            "email": "unisellergy@ebrandz.com",
-                            "phone": "9503644277"
+                            "phone": "9503644277",
+                            "email": "sandeep.y@ebrandz.us"
                         },
-                        "person": {
-                            "name": "Sandeep Yadav"
-                        },
+                        "time": {
+                            "range": {
+                                "start": "2025-06-13T12:22:15.000Z",
+                                "end": "2025-06-13T07:22:15.908Z"
+                            },
+                            "timestamp": "2025-06-13T07:22:15.908Z"
+                        }
+                    },
+                    "end": {
                         "location": {
                             "gps": "19.173978,72.856644",
                             "address": {
@@ -75,41 +101,35 @@
                                 "country": "IND",
                                 "area_code": "400097"
                             }
+                        },
+                        "person": {
+                            "name": "Sandeep Yadav"
+                        },
+                        "contact": {
+                            "email": "unisellergy@ebrandz.com",
+                            "phone": "9503644277"
+                        },
+                        "time": {
+                            "range": {
+                                "start": "2025-06-13T07:22:15.908Z",
+                                "end": "2025-06-14T12:52:15.000Z"
+                            },
+                            "timestamp": "2025-06-13T07:22:15.908Z"
                         }
                     },
-                    "type": "Delivery"
+                    "tags": [
+                        {
+                            "code": "status",
+                            "list": [
+                                {
+                                    "code": "delivered",
+                                    "value": "Order has been delivered"
+                                }
+                            ]
+                        }
+                    ]
                 }
             ],
-            "payment": {
-                "uri": "https:\/\/razorpay.com\/",
-                "tl_method": "http\/get",
-                "params": {
-                    "amount": "590.00",
-                    "currency": "INR",
-                    "transaction_id": "order_Qgac6u7Ua1aHQ4"
-                },
-                "status": "PAID",
-                "type": "ON-ORDER",
-                "collected_by": "BAP",
-                "@ondc\/org\/buyer_app_finder_fee_type": "percent",
-                "@ondc\/org\/buyer_app_finder_fee_amount": "3.0",
-                "@ondc\/org\/settlement_basis": "delivery",
-                "@ondc\/org\/settlement_window": "PT1H",
-                "@ondc\/org\/withholding_amount": "10",
-                "@ondc\/org\/settlement_details": [
-                    {
-                        "settlement_counterparty": "seller-app",
-                        "settlement_phase": "sale-amount",
-                        "settlement_type": "upi",
-                        "beneficiary_name": "Kartik",
-                        "upi_address": "kartik@upi",
-                        "beneficiary_account": "1234567890",
-                        "beneficiary_ifsc": "ICIC0001234",
-                        "beneficiary_bank": "ICICI Bank",
-                        "beneficiary_branch": "Mumbai"
-                    }
-                ]
-            },
             "quote": {
                 "price": {
                     "currency": "INR",
@@ -195,52 +215,38 @@
                 ],
                 "ttl": "P1D"
             },
-            "tags": [
-                {
-                    "code": "bpp_terms",
-                    "list": [
-                        {
-                            "code": "max_liability",
-                            "value": "2"
-                        },
-                        {
-                            "code": "max_liability_cap",
-                            "value": "10000.00"
-                        },
-                        {
-                            "code": "mandatory_arbitration",
-                            "value": "false"
-                        },
-                        {
-                            "code": "court_jurisdiction",
-                            "value": "Mumbai"
-                        },
-                        {
-                            "code": "delay_interest",
-                            "value": "7.50"
-                        },
-                        {
-                            "code": "tax_number",
-                            "value": "00ABCDE1234F1Z7"
-                        },
-                        {
-                            "code": "provider_tax_number",
-                            "value": "AAIFU1012A"
-                        }
-                    ]
+            "payment": {
+                "uri": "https:\/\/razorpay.com\/",
+                "tl_method": "http\/get",
+                "params": {
+                    "amount": "590.00",
+                    "currency": "INR",
+                    "transaction_id": "order_Qgac6u7Ua1aHQ4"
                 },
-                {
-                    "code": "bap_terms",
-                    "list": [
-                        {
-                            "code": "tax_number",
-                            "value": "GSTIN1234567890"
-                        }
-                    ]
-                }
-            ],
-            "created_at": "2025-06-13T06:59:02.422Z",
-            "updated_at": "2025-06-13T06:59:02.422Z"
+                "status": "PAID",
+                "type": "ON-ORDER",
+                "collected_by": "BAP",
+                "@ondc\/org\/buyer_app_finder_fee_type": "percent",
+                "@ondc\/org\/buyer_app_finder_fee_amount": "3.0",
+                "@ondc\/org\/settlement_basis": "delivery",
+                "@ondc\/org\/settlement_window": "PT1H",
+                "@ondc\/org\/withholding_amount": "10",
+                "@ondc\/org\/settlement_details": [
+                    {
+                        "settlement_counterparty": "seller-app",
+                        "settlement_phase": "sale-amount",
+                        "settlement_type": "upi",
+                        "beneficiary_name": "Kartik",
+                        "upi_address": "kartik@upi",
+                        "beneficiary_account": "1234567890",
+                        "beneficiary_ifsc": "ICIC0001234",
+                        "beneficiary_bank": "ICICI Bank",
+                        "beneficiary_branch": "Mumbai"
+                    }
+                ]
+            },
+            "created_at": "2025-06-13T07:22:15.908Z",
+            "updated_at": "2025-06-13T07:22:15.908Z"
         }
     }
 }

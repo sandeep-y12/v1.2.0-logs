@@ -9,8 +9,8 @@
         "bap_uri": "https:\/\/buyer-app-preprod-v2.ondc.org\/protocol\/v1",
         "bpp_uri": "https:\/\/stageondc.unisellergy.in\/api\/v1\/pre-prod\/",
         "transaction_id": "acece390-043d-4112-85f0-dd2efb84a511",
-        "message_id": "294e1043-8b60-4c41-b3b9-333c4b446dec",
-        "timestamp": "2025-06-13T06:51:12.761Z",
+        "message_id": "ebac8d35-ec9b-43be-8947-8d58e693a29b",
+        "timestamp": "2025-06-13T06:29:45.678Z",
         "bpp_id": "stageondc.unisellergy.in",
         "ttl": "PT30S"
     },
@@ -20,7 +20,7 @@
                 {
                     "id": "28143",
                     "quantity": {
-                        "count": 1
+                        "count": 2
                     },
                     "location_id": "744"
                 }
