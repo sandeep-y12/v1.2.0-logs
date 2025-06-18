@@ -1,0 +1,191 @@
+{
+    "context": {
+        "city": "std:022",
+        "action": "on_status",
+        "bap_id": "buyer-app-preprod-v2.ondc.org",
+        "bpp_id": "stageondc.unisellergy.in",
+        "domain": "ONDC:RET12",
+        "bap_uri": "https:\/\/buyer-app-preprod-v2.ondc.org\/protocol\/v1",
+        "bpp_uri": "https:\/\/stageondc.unisellergy.in\/api\/v1\/pre-prod\/",
+        "country": "IND",
+        "timestamp": "2025-06-18T16:05:52+05:30",
+        "message_id": "68529688cbb8e",
+        "core_version": "1.2.0",
+        "transaction_id": "56f36570-5d9a-4d49-9cfe-7b7e303f5bf4",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "140",
+                "locations": [
+                    {
+                        "id": "744"
+                    }
+                ]
+            },
+            "state": "RTO-Delivered",
+            "items": [
+                {
+                    "id": "28143",
+                    "quantity": {
+                        "count": 1
+                    },
+                    "fulfillment_id": "1"
+                }
+            ],
+            "billing": {
+                "address": {
+                    "name": "Sandeep Yadav",
+                    "building": "Ganesh Apt.",
+                    "locality": "Goregaon Mulund Link Road",
+                    "city": "Mumbai",
+                    "state": "Maharashtra",
+                    "country": "IND",
+                    "area_code": "400097"
+                },
+                "phone": "9503644277",
+                "name": "Sandeep Yadav",
+                "email": "unisellergy@ebrandz.com",
+                "created_at": "2025-06-18T09:37:06.397Z",
+                "updated_at": "2025-06-18T09:37:06.397Z"
+            },
+            "fulfillments": [
+                {
+                    "id": "1",
+                    "@ondc\/org\/provider_name": "Ship_Rocket_Courier_Partner",
+                    "@ondc\/org\/TAT": "PT2H",
+                    "state": {
+                        "descriptor": {
+                            "code": "RTO-Delivered"
+                        }
+                    },
+                    "type": "RTO",
+                    "tracking": false,
+                    "start": {
+                        "contact": {
+                            "email": "unisellergy@ebrandz.com",
+                            "phone": "9503644277"
+                        },
+                        "location": {
+                            "gps": "19.173978,72.856644",
+                            "address": {
+                                "name": "Sandeep Yadav",
+                                "building": "Ganesh Apt.",
+                                "locality": "Goregaon Mulund Link Road",
+                                "city": "Mumbai",
+                                "state": "Maharashtra",
+                                "country": "IND",
+                                "area_code": "400097"
+                            }
+                        },
+                        "time": {
+                            "timestamp": "2025-06-18T16:05:52+05:30"
+                        }
+                    },
+                    "end": {
+                        "location": {
+                            "id": "744",
+                            "descriptor": {
+                                "name": "KiranGoregaonWarehouseInLocalTesting"
+                            },
+                            "gps": "19.1662566,72.8525696",
+                            "address": {
+                                "locality": "This is the test Provider for Retail domain",
+                                "city": "Goregaon",
+                                "area_code": 22,
+                                "state": "Maharashtra"
+                            }
+                        },
+                        "contact": {
+                            "email": "sandeep.y@ebrandz.us",
+                            "phone": "9503644277"
+                        },
+                        "time": {
+                            "timestamp": "2025-06-18T16:05:52+05:30"
+                        }
+                    },
+                    "tags": [
+                        {
+                            "code": "quote_trail",
+                            "list": [
+                                {
+                                    "code": "type",
+                                    "value": "item"
+                                },
+                                {
+                                    "code": "id",
+                                    "value": "28143"
+                                },
+                                {
+                                    "code": "currency",
+                                    "value": "INR"
+                                },
+                                {
+                                    "code": "value",
+                                    "value": "-590.00"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "590.00"
+                },
+                "breakup": [
+                    {
+                        "@ondc\/org\/item_id": "28143",
+                        "@ondc\/org\/item_quantity": {
+                            "count": 0
+                        },
+                        "title": "Atta",
+                        "@ondc\/org\/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "590.00"
+                            }
+                        }
+                    }
+                ],
+                "ttl": "P1D"
+            },
+            "payment": {
+                "uri": "https:\/\/razorpay.com\/",
+                "tl_method": "http\/get",
+                "params": {
+                    "amount": "590.00",
+                    "currency": "INR",
+                    "transaction_id": "order_QibzswS2sbVkkV"
+                },
+                "status": "PAID",
+                "type": "ON-ORDER",
+                "collected_by": "BAP",
+                "@ondc\/org\/buyer_app_finder_fee_type": "percent",
+                "@ondc\/org\/settlement_details": [
+                    {
+                        "settlement_counterparty": "seller-app",
+                        "settlement_phase": "sale-amount",
+                        "settlement_type": "upi",
+                        "beneficiary_name": "Kartik",
+                        "upi_address": "kartik@upi",
+                        "beneficiary_account": "1234567890",
+                        "beneficiary_ifsc": "ICIC0001234",
+                        "beneficiary_bank": "ICICI Bank",
+                        "beneficiary_branch": "Mumbai"
+                    }
+                ]
+            },
+            "id": "2025-06-18-305188",
+            "created_at": "2025-06-18 15:07:35",
+            "updated_at": "2025-06-18T16:05:52+05:30"
+        }
+    }
+}
