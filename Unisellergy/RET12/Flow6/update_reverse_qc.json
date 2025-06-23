@@ -1,0 +1,71 @@
+{
+    "context": {
+        "domain": "ONDC:RET12",
+        "country": "IND",
+        "city": "std:022",
+        "action": "update",
+        "core_version": "1.2.0",
+        "bap_id": "buyer-app-preprod-v2.ondc.org",
+        "bap_uri": "https:\/\/buyer-app-preprod-v2.ondc.org\/protocol\/v1",
+        "bpp_uri": "https:\/\/stageondc.unisellergy.in\/api\/v1\/pre-prod\/",
+        "transaction_id": "659ac624-ca8f-4ba9-8f3f-45f92524945a",
+        "message_id": "6bfbb3ec-48f4-4acf-b4f3-2b167958fee6",
+        "timestamp": "2025-06-23T13:48:01.292Z",
+        "bpp_id": "stageondc.unisellergy.in",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "update_target": "item",
+        "order": {
+            "id": "2025-06-23-646945",
+            "fulfillments": [
+                {
+                    "type": "Return",
+                    "tags": [
+                        {
+                            "code": "return_request",
+                            "list": [
+                                {
+                                    "code": "id",
+                                    "value": "68595b1167fc271f83b8cd9a"
+                                },
+                                {
+                                    "code": "item_id",
+                                    "value": "28143"
+                                },
+                                {
+                                    "code": "parent_item_id",
+                                    "value": null
+                                },
+                                {
+                                    "code": "item_quantity",
+                                    "value": "1"
+                                },
+                                {
+                                    "code": "reason_id",
+                                    "value": "004"
+                                },
+                                {
+                                    "code": "reason_desc",
+                                    "value": "detailed description for return"
+                                },
+                                {
+                                    "code": "images",
+                                    "value": "https:\/\/reference-buyer-app-assets.s3-ap-south-1.amazonaws.com\/public-assets\/2025-06-23-646945\/316dab89-4134-460f-8fda-43eec740f087.jpeg"
+                                },
+                                {
+                                    "code": "ttl_approval",
+                                    "value": "PT24H"
+                                },
+                                {
+                                    "code": "ttl_reverseqc",
+                                    "value": "P3D"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
